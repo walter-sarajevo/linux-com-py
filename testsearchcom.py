@@ -6,6 +6,6 @@ import SerchCom
 
 a = SerchCom.SerchCom()
 # b = serial.tools.list_ports.comports()
-print(a.port_list)              
-
+print(a.port_list)
+print(a(1))
 
