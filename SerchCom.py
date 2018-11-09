@@ -14,10 +14,14 @@ class SerchCom(object):
         self.error = 0
 
         ports = serial.tools.list_ports.comports()
-        for i in range(0, len(ports)):
-            name = str(ports[i]).split(' ', 1)
-            self.port_list.append(name[i])
-        self.port_count = len(ports)
+        if len(ports) == 0:
+            print("ÕÒ²»µ½´®¿Ú£¡")
+
+        else:
+            for i in range(0, len(ports)):
+                name = str(ports[i]).split(' ', 1)
+                self.port_list.append(name[i])
+            self.port_count = len(ports)
 
     # def __call__(self):
     #     self.description = "Method to seach com in this machine."

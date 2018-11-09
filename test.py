@@ -1,8 +1,8 @@
 # from Class_Method import checkout
 
-import Class_Method
+import CheckoutMethods
 
-a = Checkout_Cover('yours')
+a = CheckoutMethods.Cover()
 # a = 'yours'
 print(a.checkout)
 

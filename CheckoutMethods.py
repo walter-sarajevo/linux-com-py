@@ -8,6 +8,10 @@ class NoCheck(object):
         self.ccode = 0
         self.method = "No, here's nothing."
 
+    def checkout(self):
+        return self.cbyte
+    
+
 class Cover(object):
 
     def __init__(self):
